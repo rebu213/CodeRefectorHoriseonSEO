@@ -29,12 +29,12 @@ are not know, default is sans-serif*/
     color: #d9dcd6;
 }
 
-/* apply new font fam to all div elements */
+/* apply new font fam to all div elements, fixed the calibri font missing quote*/
 .header div {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 /*for unordered list, remove the default formatting*/
@@ -67,6 +67,22 @@ p {
     background-position: center;
 }
 
+.content  {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+   /* add the seo, online_rep, & social mkting styles here; added quotes to fonts*/
+
+    .mainsite {
+        margin-bottom: 20px;
+        padding: 50px;
+        height: 300px;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+        background-color: #0072bb;
+        color: #ffffff;    
+    }
+
 /* allow the text of online rep management to be to the left of pic */
 .float-left {
     float: left;
@@ -79,139 +95,44 @@ p {
     margin-left: 25px;
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-    /* add the seo, online_rep, & social mkting styles here*/
+
+
+.content h2 {
     margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    font-size: 36px;
+}
+.content img{
+    max-height: 200px;
 }
 
-/* set font, border padding for the right display items of page */
+/* set font, border padding for the right display items of page; add quotes to fonts*/
 .benefits {
     margin-right: 20px;
     padding: 20px;
     clear: both;
     float: right;
     width: 20%;
-    /*height:100% */
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
     background-color: #2589bd;
 }
 
 /* this 3 should be combined since all are the same */
-/*.benefit-lead {  this was original custom class name */
     .benefits-list {
         margin-bottom: 32px;
         color: #ffffff;
     }
-/* ignore the other 2 custom classes
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-*/
 /* .benefit-lead h3 { */
     .benefits-list h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-/*.benefit-brand h3 { 
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-*/
-
 /*.benefit-lead img { */
     .benefits-list img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
-}
-/*
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-*/
-/* hopefully not need these and just use the content class style
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-*/
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
 }
 
 .footer {
