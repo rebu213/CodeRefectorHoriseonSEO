@@ -1,13 +1,17 @@
+/* apply universal margin to site*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* set the background color for the whole site */
 body {
     background-color: #d9dcd6;
 }
 
+/* set the header to have 20 px paddding all around, and choose from 1 of the 6 fonts.  If the first 5 fonts 
+are not know, default is sans-serif*/
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,15 +19,17 @@ body {
     color: #ffffff;
 }
 
+/* show this on the same line instead of as default block */
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
-
+/* change the color of seo portion of company name */
 .header h1 .seo {
     color: #d9dcd6;
 }
 
+/* apply new font fam to all div elements */
 .header div {
     padding-top: 15px;
     margin-right: 20px;
@@ -31,11 +37,11 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
+/*for unordered list, remove the default formatting*/
 .header div ul {
     list-style-type: none;
 }
-
+/* allow to diplay the items in 1 line instead of like bullets and 25 px all around*/
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
@@ -46,10 +52,12 @@ a {
     text-decoration: none;
 }
 
+/* set the size for all paragraph elements */
 p {
     font-size: 16px;
 }
 
+/* this is the main graphic to entice users to explore the page */
 .hero {
     height: 800px;
     width: 100%;
@@ -59,11 +67,13 @@ p {
     background-position: center;
 }
 
+/* allow the text of online rep management to be to the left of pic */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* let the picture be on the right of text instead of left and just below */
 .float-right {
     float: right;
     margin-left: 25px;
@@ -73,24 +83,35 @@ p {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
+    /* add the seo, online_rep, & social mkting styles here*/
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
 }
 
+/* set font, border padding for the right display items of page */
 .benefits {
     margin-right: 20px;
     padding: 20px;
     clear: both;
     float: right;
     width: 20%;
-    height: 210%;
+    /*height:100% */
+    height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
 
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
+/* this 3 should be combined since all are the same */
+/*.benefit-lead {  this was original custom class name */
+    .benefits-list {
+        margin-bottom: 32px;
+        color: #ffffff;
+    }
+/* ignore the other 2 custom classes
 .benefit-brand {
     margin-bottom: 32px;
     color: #ffffff;
@@ -100,13 +121,14 @@ p {
     margin-bottom: 32px;
     color: #ffffff;
 }
-
-.benefit-lead h3 {
+*/
+/* .benefit-lead h3 { */
+    .benefits-list h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
+/*.benefit-brand h3 { 
     margin-bottom: 10px;
     text-align: center;
 }
@@ -115,13 +137,15 @@ p {
     margin-bottom: 10px;
     text-align: center;
 }
+*/
 
-.benefit-lead img {
+/*.benefit-lead img { */
+    .benefits-list img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-
+/*
 .benefit-brand img {
     display: block;
     margin: 10px auto;
@@ -133,7 +157,8 @@ p {
     margin: 10px auto;
     max-width: 150px;
 }
-
+*/
+/* hopefully not need these and just use the content class style
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
@@ -160,6 +185,7 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
+*/
 
 .search-engine-optimization img {
     max-height: 200px;
